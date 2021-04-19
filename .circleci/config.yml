@@ -4,8 +4,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/sha256:c1a71b7347436f80e8ba9a890972377acd72c6500dac6eaf50b6259dda46954e
-
+      - image: echoct/test3:v2
     steps:
       - checkout
       - run: docker build -t test4:v1 .
