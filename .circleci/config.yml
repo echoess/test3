@@ -1,7 +1,8 @@
 version: 2.1
-orbs:
-  node: circleci/node@3.0.0
-workflows:
-  node-tests:
+
     jobs:
-      - node/test
+       build：
+          docker:
+             - image: sha256:c1a71b7347436f80e8ba9a890972377acd72c6500dac6eaf50b6259dda46954e
+          steps:
+             - run: echo "A first hello"
